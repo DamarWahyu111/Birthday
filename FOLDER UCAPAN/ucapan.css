@@ -1,0 +1,348 @@
+/* Gaya untuk layar loading */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gaya untuk spinner */
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animasi berputar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -3px;
+    margin-right: -3px;
+    background: linear-gradient(50deg, #FFF8DB, #FFDFD6, #FFC6C6, #FFDFD6, #F7B5CA, #F0A8D0, #FFB1B1, #F19ED2); 
+}
+
+.container-nav {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background: linear-gradient(50deg, #FFF8DB, #FFDFD6, #FFC6C6, #FFDFD6, #FF7D29, #FFEEA9, #F5E7B2, #EB5B00);
+    background-size: 400% 400%; /* Untuk animasi gradasi */
+    animation: gradientAnimation 17s ease infinite; /* Animasi gradasi */
+    color: #FF6500;; /* Warna teks dalam header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan pada header */
+}
+
+@keyframes gradientAnimation {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 10vh;
+}
+
+.a {
+    justify-content: space-between;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 0;
+}
+
+.a:hover {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30px;
+        background: linear-gradient(120deg, #F7B5CA, #F0A8D0, #FFB1B1, #F19ED2);
+        padding: 10vh;
+        justify-content: space-evenly;
+        padding-top: 14vh;
+        margin-bottom: -11vh;
+    }
+
+    .img {
+        object-fit: cover;
+    }
+
+    .grid-container > article {
+        box-shadow: 10px 5px 5px 0px black;
+        border-radius: 20px;
+        text-align: center;
+        background: whitesmoke;
+        width: 300px;
+        transition: transform;
+        font-family: Arial, sans-serif;
+    }
+
+    .grid-container > article img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .grid-container > article:hover {
+        transform: scale(1.3);
+    } 
+
+    p {
+        text-align: center;
+        font-size: large;
+    }
+
+    .box-teks {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 10vh;
+    text-align: center;
+    border: 2px solid;
+    border-radius:  0px 10px 18px rgba(0, 0, 0, 0.1);
+}
+
+    .head > h1 {
+        display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    margin-top: 80px;
+    text-align: center;
+        background: linear-gradient(50deg, #FFF8DB, #FFDFD6, #FFC6C6, #FFDFD6, #F7B5CA, #F0A8D0, #FFB1B1, #F19ED2);
+    background-size: 400% 400%; /* Untuk animasi gradasi */
+    animation: gradientAnimation 17s ease infinite; /* Animasi gradasi */
+    color: #FF6500; /* Warna teks dalam header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan pada header */
+    }
+
+    .memories > h1 {
+        display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    margin-top: 30px;
+    text-align: center;
+        background: linear-gradient(50deg, #FFF8DB, #FFDFD6, #FFC6C6, #FFDFD6, #F7B5CA, #F0A8D0, #FFB1B1, #F19ED2);
+    background-size: 400% 400%; /* Untuk animasi gradasi */
+    animation: gradientAnimation 17s ease infinite; /* Animasi gradasi */
+    color: #FF6500; /* Warna teks dalam header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan pada header */
+    }
+    
+    .grid-memories {
+display: flex;
+flex-wrap: wrap; /* Allows the items to wrap to the next line if they overflow */
+gap: 10px; /* Optional: Adds space between the items */
+background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+padding-bottom: 55px;
+padding-top: 55px;
+}
+
+.grid-memories > article {
+display: flex;
+flex-direction: column; /* Ensures that content inside the article stacks vertically */
+align-items: stretch;
+box-shadow: 10px 5px 5px 0px black;
+border-radius: 15px;
+background: whitesmoke;
+width: 300px;
+transition: transform 0.3s;
+margin-left: vh;
+margin-left: 50px;
+}
+
+    .grid-memories > article img {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        
+    }
+
+    .grid-memories > article:hover {
+        transform: scale(1.1);
+    } 
+
+    
+
+    .day > h1 {
+        display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    margin-top: 80px;
+    text-align: center;
+        background: linear-gradient(50deg, #FFF8DB, #FFDFD6, #FFC6C6, #FFDFD6, #F7B5CA, #F0A8D0, #FFB1B1, #F19ED2);
+    background-size: 400% 400%; /* Untuk animasi gradasi */
+    animation: gradientAnimation 17s ease infinite; /* Animasi gradasi */
+    color: #FF6500; /* Warna teks dalam header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan pada header */
+    }
+
+    .countdown-body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 2000px; /* Hanya untuk menambahkan efek scroll */
+    }
+
+    #countdown {
+        position: fixed;
+        top: 50%; /* Menempatkan di tengah vertikal */
+        right: 20px; /* Menempatkan di samping kanan */
+        transform: translateY(-50%); /* Menyesuaikan supaya benar-benar di tengah */
+        background-color: #ff9a9e;
+        padding: 15px 25px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content {
+        padding: 20px;
+        margin-right: 250px; /* Menambahkan ruang agar countdown tidak menutupi teks */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5vh;
+        padding-bottom: 8vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form-star {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10vh;
+        margin-top: 0vh;
+    }
+    /* Hide the radio buttons */
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+
+    /* Style the stars */
+    .star-rating label {
+        font-size: 2em;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    /* Change the color of the stars on hover */
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: #ffca08;
+    }
+
+    /* Change the color of the stars when selected */
+    .star-rating input[type="radio"]:checked ~ label {
+        color: #ffca08;
+    }
+
+    .video-container {
+        position: relative;
+        width: 560px;
+        height: 315px;
+    }
+    
+
+    video {
+        display: flex;
+        margin: auto auto;
+        border: none;
+        margin-bottom: 10px;
+        
+    }
+
+    section > h1 {
+        text-align: center;
+    }
+
+    .border-day {
+        border: 5px solid black;
+        margin-top: 10px;
+    }
+
+    .popup-body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .popup-content {
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .popup-content h2 {
+        margin-top: 0;
+    }
+
+    .popup-content button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #fda085;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .popup-content button:hover {
+        background-color: #f6d365;
+    }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ucapan.css">
+</head>
+<style>
+  
+
+    .box-teks {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10vh;
+        text-align: center;
+        border: 2px solid;
+        border-radius:  0px 10px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-teks p {
+        font-size: 24px;
+    }
+
+    button {
+        transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF69B4; /* a slightly darker pink shade on hover */
+}
+        
+</style>
+<script>
+    window.onload = function() {
+            document.getElementById('popup1').style.display = 'flex';
+            document.getElementById("loading").style.display = "none";
+        };
+
+        function closePopup(popupNumber) {
+            document.getElementById('popup' + popupNumber).style.display = 'none';
+            var nextPopup = popupNumber + 1;
+            if (nextPopup <= 4) {
+                document.getElementById('popup' + nextPopup).style.display = 'flex';
+            }
+        
+    }
+</script>
+<body>
+    <div class="popup-body"></div>
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <h2>Welcome to the First Surprise</h2>
+                <p>Click to continue to the next surprise</p>
+                <button onclick="closePopup(1)">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-body"></div>
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <h2>CIEEE ULANG TAHUN YAAAAA</h2>
+                <p>Click Next</p>
+                <button onclick="closePopup(2)">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-body">
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <h2>Apakah kamu bahagia di hari ulang tahun mu?</h2>
+                <p>Harus bahagia kamu, ngga mau tau aku.</p>
+                <button onclick="closePopup(3)">Bahagia</button>
+                <button onclick="closePopup(3)">Bahagia</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup-body">
+        <div id="popup4" class="popup">
+            <div class="popup-content">
+                <h2>SELAMAT ULANG TAHUN KE-18!</h2>
+                <p>I proud of you, and i like u for everything.</p>
+                <button onclick="closePopup(4)">Enter</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="loading">
+        <div class="spinner"></div>
+    </div> -->
+
+    <section id="teks1">
+        <div class="head">
+            <h1 style="margin-top: -10px; text-align: center; align-items: center;">Birthday greetings</h1>
+        </div>
+        <div class="box-teks">
+                <h1>Kamu tau ngga?</h1>
+                <p>Hari ini kan ulang tahun kamu tau yang ke berapa yaaaa? ke 18 kannnn dekkk wkwkwk, udah tua aja kamu.</p>
+                <p>Aku mau mengucapkan <b>SELAMAT ULANG TAHUN ICUT KE-18</b> Semoga nambah umur bukan pendek umur yaa</p><br>
+                <p>UNTUK KAMU:</p>
+                <p>Selamat ulang tahun untukmu, wanita aku. Hari ini adalah hari yang istimewa karena ini adalah hari di mana dunia mendapatkan seseorang yang luar biasa.
+                    Aku bersyukur setiap hari bisa mengenalmu dan melihat betapa indahnya dirimu, tidak hanya dari luar, tapi terutama dari dalam.
+                    Keberadaanmu telah membawa kebahagiaan dan cahaya dalam hidupku.
+                </p>
+                <p>Kamu adalah inspirasi yang tak pernah habis, selalu mampu membuatku tersenyum bahkan di saat-saat sulit. Kamu mengajarkan aku tentang kesabaran, kasih sayang.
+                    Pada hari spesial ini, aku ingin kamu tahu betapa bahagianya aku ada kau dan betapa beruntungnya aku bisa menjadi orang yang kamu sukai saat ini.
+                </p>
+                <p>Semoga di ulang tahunmu ini, semua impian dan harapanmu dapat terwujud. Aku ingin kamu selalu merasakan kebahagiaan, tidak hanya hari ini, tapi setiap hari dalam hidupmu.
+                    Kamu pantas mendapatkan yang terbaik, dan aku berdoa agar kamu selalu dikelilingi oleh orang-orang yang mencintai dan menghargaimu.
+                    Biarlah setiap tahun yang bertambah, semakin memperkuat dirimu dan menjadikanmu sosok yang lebih hebat dari sebelumnya.
+                </p>
+                <p>
+                    Terima kasih telah menjadi sosok yang begitu istimewa dalam hidupku. Kamu adalah anugerah yang tak ternilai, 
+                    dan terimakasih ya sudah menjadikan aku mungkin yang utama bagimu.
+                    Selamat ulang tahun, sayang. Semoga kita menjadi orang yang sayang satu sama lain.
+                </p><br>
+                <p>CIEEEE sekarang juga udah jadi anak official Unair nihhhh, aku tau perjuangan kamu untuk mendapatkan Unair kamu kan suka bilang di group yang ada salsa, jeya, dll. sekarang
+                    kamu udah berhasil, aku yakin kamu akan menjadi orang yang sukses dan berprestasi nantinya, jangan males untuk melakukan apapun itu dan percayalah semua ada jalan keluarnya
+                    sendiri. Dengan itu kamu bisa meyakinkan diri kamu sendiri bahwa kamu bisa melakukan semuanya, aku tau kok pas kamu ospek aja kamu suka bantu kawan, edit video kelompok, dll.
+                    Semangat terus ya pokoknya, selama kamu di Unair cari relasi, organisasi, IKM, bahkan UKM. Lanjutkan terus perjuangan mu itu sampai akhirnya menjadi wanita yang berhasil
+                    semua keberhasilan mu itu ada orang yang bahagia menunggu hal itu, lakukan lah sampai semua nya tercapai.
+                </p>
+                <p> AKU SEBENARNYA MALUUUU NGETIK INI HIHIHIHI, CUMAN UNTUK KAMU AKU NGGA MALU MAU NGASIH RASA EKHEMMM ITU HAHAHAHA !!!!</p>
+                <button style="background-color: #FFC5C5; border: none; border-radius: 5px; padding: 10px 20px; font-size: 16px; color: #FFFFFF; cursor: pointer;">
+                    <a href="teks2.html">Flower For You</a>
+                  </button>
+                  <button style="background-color: #FFC5C5; border: none; border-radius: 5px; padding: 10px 20px; font-size: 16px; color: #FFFFFF; cursor: pointer;">
+                    <a href="projectkecil.html">Back</a>
+                  </button>
+            </div>
+    </section>
+</body>
+</html>
